@@ -146,7 +146,7 @@ const getImageUrls = async(toastID) => {
   }
 
   const SaveImages = async() => {
-    if(imgs.length > 0){
+    if(imgs.length > 0 && imgs.length < 10){
       const toastID = toast.loading("Removing old images and Uploading new Files");
       const folderRef = ref(storage, `SpyneCarImages/${carID}`);
 
@@ -164,7 +164,7 @@ const getImageUrls = async(toastID) => {
         conosle.errro("Unwanted error occured : " , e);
       }
     }else{
-      toast.error("Please Select at least one Image");
+      toast.error("Please Select min of 1 image and max of 10");
     }
   }
 
