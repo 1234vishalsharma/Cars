@@ -49,7 +49,7 @@ const Login = () => {
   };
 
   return (
-    <div className="flex flex-col w-screen h-screen bg-[url('./bglogin.jpg')] bg-cover bg-center  text-[#454545]">
+    <div className="flex flex-col w-screen h-screen bg-Login bg-cover bg-center  text-[#454545]">
       <div className="w-2/4 h-full flex flex-col p-12">
         <p className="text-xl font-bold">
           {"Explore - Begin Your journey by Signup/login"}

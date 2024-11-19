@@ -5,7 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'Signup': "url('/ferari.jpg')",
+        'Login': "url('/.pbglogin.jpg')",
+      }
+    },
   },
   plugins: [],
 }

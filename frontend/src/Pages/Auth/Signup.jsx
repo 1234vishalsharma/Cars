@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import {Button, TextField} from "@mui/material";
 import { Link , useNavigate } from 'react-router-dom';
 import toast , {Toaster} from 'react-hot-toast';
+import { useEffect } from 'react';
 
 
 const Signup = () => {
@@ -41,9 +42,13 @@ const Signup = () => {
         })
     }
 
+    useEffect(() => {
+        toast("Backend will take 30s to load please wait. deployed platform -Render.com");
+    } , []);
+
 
     return (
-        <div className="flex flex-col w-screen h-screen bg-[url('./ferari.jpg')] bg-cover bg-center text-[#686767]">
+        <div className={`flex flex-col w-screen h-screen bg-Signup bg-cover bg-center text-[#686767]`}>
         <div className='w-2/4 h-full flex flex-col p-12'>
             <p className='text-xl font-bold'>{"Explore - Begin Your journey by Signup/login"}</p>
             <p className='font-semibold text-3xl mb-4'>Begin Your Journey, Explore Cars<span className='text-5xl'>.</span></p>
