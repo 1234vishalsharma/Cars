@@ -8,7 +8,7 @@ export default {
     extend: {
       backgroundImage: {
         'Signup': "url('/ferari.jpg')",
-        'Login': "url('/.bglogin.jpg')",
+        'Login': "url('/bglogin.jpg')",
       }
     },
   },
